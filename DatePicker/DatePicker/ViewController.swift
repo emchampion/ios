@@ -20,11 +20,12 @@ class ViewController: UIViewController {
         var formatter = NSDateFormatter()
         formatter.dateFormat = "EEEE"
         
-        //grab the day and crete a message
+        //grab the day and create a message
         let day = formatter.stringFromDate(chosenDate)
         let result = "That day was: \(day)"
         
-        //create alert controller
+        //This should be an alert according to the ios Human Interface Guidlines, I wanted a action sheet
+        //to play around with and see how it looked
         let myAlert = UIAlertController(title: result, message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
         
         //add okay
